@@ -141,9 +141,24 @@ main .reservation .bouton-explorer .explorer-bouton {
     margin-left: 15px;
 }
 
-footer a {
-    display: inline-block;
-    padding: 8px 16px;
+footer{
+    background-color:black ;
+    padding: 20px;
+}
+.footer-ohmyfood{
+    color: white;
+}
+footer ul{
+    padding: 0%;
+}
+footer li {
+    list-style-type: none;
+}
+footer li a {
+    color: white;
     text-decoration: none;
-    color: black;
-  }
+}
+footer li i{
+    color: white;
+    padding: 5px;
+}
