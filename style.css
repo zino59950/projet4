@@ -112,16 +112,31 @@ main .reservation .bouton-explorer .explorer-bouton {
     background: var(--background, #F6F6F6);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
+.restaurants {
+    background: var(--background, #F6F6F6);
+}
 .carte-restaurants {
     width: 340px;
     height: 251px;
-    background-color:whitesmoke;
+    background-color:white;
     border: 1px solid grey;
     border-radius: 15px;
     margin-top: 130px;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 130px;
+}
+
+.carte-badge {
+    background-color: rgba(0, 135, 102, 1);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    width: 80px;
+    height: 29px;
+    
 }
 .restaurants .titre-restaurants {
     color: #000;
@@ -131,6 +146,7 @@ main .reservation .bouton-explorer .explorer-bouton {
     font-weight: 700;
     line-height: normal;
     margin-left: 20px;
+    margin-top: 0px;
 }
 
 .carte-restaurants img {
@@ -142,8 +158,9 @@ main .reservation .bouton-explorer .explorer-bouton {
 
 .carte-restaurants .texte-restaurants {
     color: #000;
-    border: 2px solid red;
+    border-radius: 15px;
     width: 340px;
+    background-color:white;
 }
 
 footer{
