@@ -3,95 +3,196 @@ body {
   
     header h1 {
         color: #101010;
-        /* ... autres propriétés ... */
+        text-align: center;
+        font-family: Shrikhand, cursive;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 15px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     }
 
     main {
         background-color: rgba(246, 246, 246, 1);
-        /* ... autres propriétés ... */
+        padding-bottom: 60px;
 
         .location {
             background-color: rgba(234, 234, 234, 1);
-            /* ... autres propriétés ... */
+            padding: 0.5rem;
+            align-items: center;
+            h2 {
+                width: 12px;
+                height: 16px;
+            }
+
+            i {
+                font-size: 17px;
+                font-weight: 300;
+            }
         }
 
         .reservation {
-            /* ... autres propriétés ... */
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 3px;
 
             .reservez {
                 color: #000;
-                /* ... autres propriétés ... */
+                color: #000;
+                text-align: center;
+                font-family: Roboto, cursive;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
             }
 
             .decouvrez {
                 color:  #353535;
-                /* ... autres propriétés ... */
+                text-align: center;
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
             }
 
             .bouton-explorer {
-                /* ... autres propriétés ... */
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                width: 218px;
+                height: 50px;
+                border-radius: 25px;
+                background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+                margin-left: 70px;
 
                 .explorer-bouton {
                     color:  #FFF;
-                    /* ... autres propriétés ... */
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
                 }
             }
         }
     }
 
     .fonctionnement {
-        /* ... autres propriétés ... */
+        padding-bottom: 30px;
 
         .fonctionnement-titre {
             font-size: 24px;
             font-weight: 700;
-            /* ... autres propriétés ... */
+            padding-left: 20px;
+            padding-top: 30px;
         }
 
         .num-1,
         .num-2,
         .num-3 {
-            /* ... autres propriétés ... */
+            width: 90%;
+            height: 72.379px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: var(--background, #F6F6F6);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 20px;
+            margin-bottom: 20px;
 
             span {
-                /* ... autres propriétés ... */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color:#9356DC;
+                color: #ffffff;
+                border-radius: 15px;
+                width: 24px;
+                height: 25px;
+                position: relative;right: 30px;
             }
         }
 
-        /* ... autres sélecteurs ... */
+        .fa-solid.fa-mobile-screen-button,
+        .fa-solid.fa-list-ul,
+        .fa-solid.fa-store{
+            color:#7E7E7E;
+            padding: 15px;
+            margin-left: -25px;
+        }
     }
 
     .restaurant-section {
-        /* ... autres propriétés ... */
+        background: var(--background, #F6F6F6);
+        text-decoration: none;
 
         .restaurant-title {
             font-size: 24px;
-            /* ... autres propriétés ... */
+            padding-left: 20px;
+            padding-top: 40px;
+            padding-bottom: 10px;
         }
 
         .restaurant-carte {
-            /* ... autres propriétés ... */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            padding-bottom: 75px;
 
             .carte-menu {
-                /* ... autres propriétés ... */
+                display: flex;
+                flex-direction: column;
+                border-radius: 15px;
+                overflow: hidden;
+                position: relative;
 
                 img {
-                    /* ... autres propriétés ... */
+                    width: 346px;
+                    height: 231px;
+                    object-fit: cover;
+                    border-radius: 15px 15px 0 0;
                 }
 
                 .carte-badge {
-                    /* ... autres propriétés ... */
+                    position: absolute; /* Utilisation de position absolute pour le badge */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                    height: 29px;
+                    flex-shrink: 0;
+                    border-radius: 2px;
+                    background: var(--green, #99E2D0);
+                    color: var(--green-font, #008766);
+                    font-size: 14px;
+                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+                    right: 0.5rem; /* À 0,5rem du bord gauche */
+                    top: 0.5rem; /* À 0,5rem du bord supérieur */
                 }
 
                 .carte-content {
-                    /* ... autres propriétés ... */
+                    background: #FFF;
+                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+                    border-radius: 0 0 15px 15px;
+                    padding-left: 15px;
+                    height: 75px;
 
                     h3 {
-                        /* ... autres propriétés ... */
+                        margin-bottom: -13px;
+                        margin-top: 12px;
                     }
 
                     p {
-                        /* ... autres propriétés ... */
+                        font-size: 17px;
+                        font-weight: 300;
                     }
                 }
             }
@@ -99,29 +200,29 @@ body {
     }
 
     footer {
-        /* ... autres propriétés ... */
+        background-color:black ;
+        padding: 20px;
 
         .footer-ohmyfood {
             color: white;
-            /* ... autres propriétés ... */
         }
 
         ul {
-            /* ... autres propriétés ... */
+            padding: 0%;
 
             li {
-                /* ... autres propriétés ... */
+                list-style-type: none;
 
                 a {
                     color: white;
-                    /* ... autres propriétés ... */
+                    text-decoration: none;
                 }
 
                 i {
                     color: white;
-                    /* ... autres propriétés ... */
+                    padding: 5px;
+                }
                 }
             }
         }
     }
-}

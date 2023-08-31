@@ -233,7 +233,7 @@ font-weight: 300;
     background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
     background-clip: text;
     -webkit-background-clip: text;
-    transform: scale(1.4); /* Met l'élément à 150% de sa taille d'origine */
+    transform: scale(1.4); 
 
  }
  
@@ -257,4 +257,29 @@ footer li a {
 footer li i{
     color: white;
     padding: 5px;
+}
+
+@media screen and (min-width: 1025px) {
+    /* Votre CSS pour les grands écrans ici */
+
+
+.fonctionnement-liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+.num-1,
+.num-2,
+.num-3 {
+    width: 320px;
+    height: 72.379px;
+}
+
+
+
+
 }
