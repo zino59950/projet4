@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "sass": "^1.66.1"
-  }
+  "name": "projet4-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch SASS/style.scss dossier-css/style.css" 
+  },
+  "author": "",
+  "license": "ISC"
 }
