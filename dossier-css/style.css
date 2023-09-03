@@ -191,15 +191,13 @@ a {
 .carte-menu .content-carte .btn-like {
   width: 30%;
 }
-
 .carte-menu img {
   width: 100%;
   height: 231px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-
-.carte-badge {
+.carte-menu .carte-badge {
   position: absolute; /* Utilisation de position absolute pour le badge */
   display: flex;
   justify-content: center;
@@ -215,13 +213,11 @@ a {
   right: 0.5rem; /* À 0,5rem du bord gauche */
   top: 0.5rem; /* À 0,5rem du bord supérieur */
 }
-
-.carte-content h3 {
+.carte-menu .carte-content h3 {
   margin-bottom: -13px;
   margin-top: 12px;
 }
-
-.carte-content p {
+.carte-menu .carte-content p {
   font-size: 17px;
   font-weight: 300;
 }
