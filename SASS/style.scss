@@ -280,6 +280,11 @@ footer{
     
 }
 /*partie la palette du gout*/
+header {
+    .fa-solid .fa-arrow-left {
+        font-size: 30px;
+    }
+}
 .image-palette {
     img {
     width: 100%;
@@ -316,7 +321,6 @@ main {
     margin-left: 10px;
     border-radius: 15px;
     padding-left: 10px;
-    height: 70px;
     p{
         overflow: hidden;
         text-overflow: ellipsis;
