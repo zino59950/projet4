@@ -276,12 +276,13 @@ footer ul {
 }
 
 /*partie la palette du gout*/
-main {
-  background-color: #F6F6F6;
-}
-main .image-palette img {
+.image-palette img {
   width: 100%;
   height: 275px;
+}
+
+main {
+  background-color: whitesmoke;
 }
 main .ensemble-entre {
   display: flex;
@@ -296,20 +297,104 @@ main .ensemble-entre .titre-entre {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
 }
-main .ensemble-entre .titre-sous-titre-1 {
-  background-color: white;
-  width: 90%;
-  height: 65px;
-  border-radius: 15px;
+
+.entre-1 {
   display: flex;
-  padding-left: 15px;
+  background-color: white;
+  width: 95%;
+  margin-left: 10px;
+  border-radius: 15px;
+  padding-left: 10px;
+  height: 70px;
 }
-main .ensemble-entre .titre-sous-titre-1 p {
-  width: 100%;
+.entre-1 p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-main .ensemble-entre .titre-sous-titre-1 p span {
+.entre-1 p span {
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.titre-plat {
+  margin-left: 20px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.entre {
+  display: flex;
+  background-color: white;
+  width: 95%;
+  margin-left: 10px;
+  border-radius: 15px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.entre p {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.entre p span {
+  display: block;
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bouton-commander {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.bouton-commander .commander-bouton {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media screen and (min-width: 768px) {
