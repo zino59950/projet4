@@ -276,7 +276,7 @@ footer ul {
 }
 
 /*partie la palette du gout*/
-header .fa-solid .fa-arrow-left {
+header .arrow {
   font-size: 30px;
 }
 
@@ -312,8 +312,8 @@ main .ensemble-entre .titre-entre {
 .entre-1 {
   display: flex;
   background-color: white;
-  width: 95%;
-  margin-left: 10px;
+  width: 90%;
+  margin-left: 15px;
   border-radius: 15px;
   padding-left: 10px;
 }
@@ -351,8 +351,8 @@ main .ensemble-entre .titre-entre {
 .entre {
   display: flex;
   background-color: white;
-  width: 95%;
-  margin-left: 10px;
+  width: 90%;
+  margin-left: 15px;
   border-radius: 15px;
   padding-left: 10px;
   margin-top: 15px;
