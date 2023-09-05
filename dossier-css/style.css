@@ -231,8 +231,8 @@ a {
 
 .euro {
   position: relative;
-  left: 330px;
-  bottom: 15px;
+  left: 19rem;
+  bottom: 1rem;
 }
 
 .fa-solid.fa-heart {
@@ -245,6 +245,13 @@ a {
 }
 
 .btn-like:hover .fa-solid.fa-heart {
+  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: scale(1.4);
+}
+
+.btn-like-resto:hover .fa-solid.fa-heart {
   background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
   background-clip: text;
   -webkit-background-clip: text;
@@ -329,6 +336,7 @@ main .ensemble-entre .titre-entre {
   border-radius: 15px;
   padding-left: 10px;
   margin-bottom: 15px;
+  height: 70px;
 }
 .entre-1 p {
   font-family: Roboto;
