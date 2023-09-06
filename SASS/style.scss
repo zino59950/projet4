@@ -139,7 +139,7 @@ margin-left: 5%;
     margin-left: -25px;
 }
 
-
+/*restaurant*/
 .restaurant-section {
     background: var(--background, #F6F6F6);
     text-decoration: none;
@@ -221,7 +221,7 @@ a {
         }     
     }
 }
-
+/*coeur*/
 .fa-regular.fa-heart {
     position: absolute;
     bottom: 30px;
@@ -230,11 +230,7 @@ a {
 
 }
 
-.euro {
-    position: relative;
-    left: 19rem;
-    bottom: 1rem;
-}
+
 .fa-solid.fa-heart {
     position: absolute;
     bottom: 30px;
@@ -303,6 +299,12 @@ header {
     height: 275px;
     }
 }
+.euro {
+    display: flex;
+    position: relative;
+    left: 19rem;
+    bottom: 1rem;
+}
 .btn-like-resto {
     position: relative;
     top: 20px;
@@ -361,36 +363,7 @@ main {
     line-height: normal;
     text-transform: uppercase;
 }
-.entre {
-    display: flex;
-    background-color: white;
-    width: 90%;
-    margin-left: 15px;
-    border-radius: 15px;
-    padding-left: 10px;
-    margin-top: 15px;
-    p {
-        overflow: hidden;
-        color: #000;
-        text-overflow: ellipsis;
-        font-family: Roboto;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        span {
-            display: block;
-            overflow: hidden;
-            color: #000;
-            text-overflow: ellipsis;
-            font-family: Roboto;
-            font-size: 15.043px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-        }
-    }
-}
+
 main h1 {margin-left: 15px;
     color: var(--Black, #101010);
     font-family: Shrikhand;

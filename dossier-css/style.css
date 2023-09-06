@@ -142,6 +142,7 @@ main .reservation .bouton-explorer .explorer-bouton {
   margin-left: -25px;
 }
 
+/*restaurant*/
 .restaurant-section {
   background: var(--background, #F6F6F6);
   text-decoration: none;
@@ -222,17 +223,12 @@ a {
   font-weight: 300;
 }
 
+/*coeur*/
 .fa-regular.fa-heart {
   position: absolute;
   bottom: 30px;
   font-size: 22px;
   right: 15px;
-}
-
-.euro {
-  position: relative;
-  left: 19rem;
-  bottom: 1rem;
 }
 
 .fa-solid.fa-heart {
@@ -299,6 +295,13 @@ header .arrow {
   height: 275px;
 }
 
+.euro {
+  display: flex;
+  position: relative;
+  left: 19rem;
+  bottom: 1rem;
+}
+
 .btn-like-resto {
   position: relative;
   top: 20px;
@@ -359,37 +362,6 @@ main .ensemble-entre .titre-entre {
   font-weight: 300;
   line-height: normal;
   text-transform: uppercase;
-}
-
-.entre {
-  display: flex;
-  background-color: white;
-  width: 90%;
-  margin-left: 15px;
-  border-radius: 15px;
-  padding-left: 10px;
-  margin-top: 15px;
-}
-.entre p {
-  overflow: hidden;
-  color: #000;
-  text-overflow: ellipsis;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.entre p span {
-  display: block;
-  overflow: hidden;
-  color: #000;
-  text-overflow: ellipsis;
-  font-family: Roboto;
-  font-size: 15.043px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 main h1 {
