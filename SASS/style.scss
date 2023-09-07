@@ -43,8 +43,10 @@ main .location {
 }
 
 main .reservation {
-    margin-right: 30px;
-    margin-top: 3px;
+    .content-explorer {
+        display: flex;
+        justify-content: center;
+    }
     .reservez {
         color: #000;
         text-align: center;
@@ -72,7 +74,6 @@ main .reservation {
         border-radius: 25px;
         background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        margin-left: 70px;
         .explorer-bouton {
             color:  #FFF;
             font-family: Roboto;
@@ -101,7 +102,7 @@ margin-left: 5%;
 .num-1,
 .num-2,
 .num-3 {
-    width: 80%;
+    width: 93%;
     height: 70px;
     flex-shrink: 0;
     border-radius: 20px;
@@ -113,10 +114,9 @@ margin-left: 5%;
     gap: 10px;
     padding-left: 20px;
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 30px;
+    box-sizing: border-box;
+    padding-right: 20px;
 }
-
 .num-1 span,
 .num-2 span,
 .num-3 span{
@@ -186,6 +186,7 @@ a {
         position: relative;
         .btn-like {
             width: 30%;
+
         }
     }
     img {
@@ -223,7 +224,6 @@ a {
 }
 /*coeur*/
 .fa-regular.fa-heart {
-    position: absolute;
     bottom: 30px;
     font-size: 22px;
     right: 15px;
@@ -232,13 +232,12 @@ a {
 
 
 .fa-solid.fa-heart {
-    position: absolute;
-    bottom: 30px;
-    right: 15px;
     font-size: 22px;
     color: transparent;
-    transition:all 500ms ease-in-out;
-
+    transition: all 500ms ease-in-out;
+    position: absolute;
+    right: 0px;
+    top: 10px;
 }
 
 .btn-like:hover .fa-solid.fa-heart{
@@ -301,14 +300,15 @@ header {
     }
 }
 .euro {
-    display: flex;
-    position: relative;
-    left: 19rem;
-    bottom: 1rem;
-}
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+ }
+    
+
 .btn-like-resto {
+    margin-left: 40px;
     position: relative;
-    top: 20px;
 }
 main {
     background-color: whitesmoke;
@@ -333,6 +333,14 @@ main {
         }
     }
 }
+.section-menu {
+    background-color: grey;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-top: -50px;
+    z-index: 20;
+    position: relative;
+}
 .entre-1 {
     display: flex;
     background-color: white;
@@ -342,6 +350,7 @@ main {
     padding-left: 10px;
     margin-bottom: 15px;
     height: 70px;
+    position: relative;
     p{
         font-family: Roboto;
         font-size: 18px;
@@ -365,13 +374,15 @@ main {
     text-transform: uppercase;
 }
 
-main h1 {margin-left: 15px;
+main h1 {
+    margin-left: 15px;
     color: var(--Black, #101010);
     font-family: Shrikhand;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
 }
 .bouton-commander {
     display: flex;
@@ -411,8 +422,11 @@ main h1 {margin-left: 15px;
 .num-1, 
 .num-2,
 .num-3 {
-    width: 75%;
+    width: 100%;
     height: 72.379px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
 }
 
 .footer-ohmyfood {
@@ -436,7 +450,7 @@ main h1 {margin-left: 15px;
     }
 }
 
-}
+
 /*Pages des restaurants*/
 /*header {
     width: 100%;
