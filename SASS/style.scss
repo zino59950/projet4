@@ -380,18 +380,16 @@ main {
     font-family: Roboto;
     font-size: 18px;
     font-weight: 900;
-}
-
-.entre-1 p span {
-    display: block;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.euro {
-    position: relative;
-    left: 95%;
+    span {
+        display: block;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 600; 
+    }
+    .euro {
+        position: relative;
+        left: 95%;
+    }
 }
 
 .menuItem {
@@ -408,26 +406,24 @@ main {
     animation-fill-mode: both;
     transform: scale(0);
     max-width: 100%;
+    .menuItem__confirmation {
+        background-color: #99e2d0;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.5s;
+    }
+    .menuItem__header {
+        flex: 1;
+    }
+    .delay-0 {
+        animation-delay: 0s;
+    }
 }
 
-.delay-0 {
-    animation-delay: 0s;
-}
 
-/* Styles pour .menuItem__confirmation */
-.menuItem__confirmation {
-    background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-}
-
-.menuItem__header {
-    flex: 1;
-}
 
 .menuItem:hover .menuItem__confirmation {
     margin-right: 0rem;
@@ -573,9 +569,7 @@ main {
     display: flex;
     background-color: white;
     width: 70%;
-
     border-radius: 15px;
-    padding-left: 10px;
     margin-bottom: 15px;
     height: 70px;
     position: relative;

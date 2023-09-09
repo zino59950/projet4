@@ -378,15 +378,13 @@ main .ensemble-entre .titre-entre {
   font-size: 18px;
   font-weight: 900;
 }
-
 .entre-1 p span {
   display: block;
   font-family: Roboto;
   font-size: 15px;
   font-weight: 600;
 }
-
-.euro {
+.entre-1 p .euro {
   position: relative;
   left: 95%;
 }
@@ -406,13 +404,7 @@ main .ensemble-entre .titre-entre {
   transform: scale(0);
   max-width: 100%;
 }
-
-.delay-0 {
-  animation-delay: 0s;
-}
-
-/* Styles pour .menuItem__confirmation */
-.menuItem__confirmation {
+.menuItem .menuItem__confirmation {
   background-color: #99e2d0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
@@ -421,9 +413,11 @@ main .ensemble-entre .titre-entre {
   justify-content: center;
   transition-duration: 0.5s;
 }
-
-.menuItem__header {
+.menuItem .menuItem__header {
   flex: 1;
+}
+.menuItem .delay-0 {
+  animation-delay: 0s;
 }
 
 .menuItem:hover .menuItem__confirmation {
@@ -572,7 +566,6 @@ main {
   background-color: white;
   width: 70%;
   border-radius: 15px;
-  padding-left: 10px;
   margin-bottom: 15px;
   height: 70px;
   position: relative;
