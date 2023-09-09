@@ -361,6 +361,95 @@ main .ensemble-entre .titre-entre {
   font-weight: 600;
 }
 
+.entre-1 {
+  display: flex;
+  background-color: white;
+  width: 90%;
+  margin-left: 15px;
+  border-radius: 15px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  height: 70px;
+  position: relative;
+}
+
+.entre-1 p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.entre-1 p span {
+  display: block;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.euro {
+  position: relative;
+  left: 95%;
+}
+
+.menuItem {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+/* Styles pour .menuItem__confirmation */
+.menuItem__confirmation {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.menuItem__header {
+  flex: 1;
+}
+
+.menuItem:hover .menuItem__confirmation {
+  margin-right: -1rem;
+  transform: translateX(1rem); /* Ajoutez une translation pour l'animation */
+  transition-duration: 0.5s;
+}
+
+/* Animation */
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sous {
+  margin: 0; /* Supprime la marge inférieure du paragraphe */
+}
+
+.euro {
+  position: relative;
+  bottom: 20px;
+}
+
 .titre-plat {
   margin-left: 20px;
   color: #000;
