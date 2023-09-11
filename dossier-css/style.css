@@ -631,6 +631,13 @@ i.fa-solid.fa-check {
 @media screen and (min-width: 768px) {
   /* Votre SCSS pour les grands écrans ici */
   /* img */
+  header .arrow {
+    font-size: 30px;
+    position: relative;
+    top: 40px;
+    right: 50%;
+    margin-left: 5px;
+  }
   .image-palette img {
     width: 100%;
     height: 350px;
