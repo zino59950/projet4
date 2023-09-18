@@ -198,17 +198,28 @@ main h1 {
 }
 
 .entre-1 p {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
     font-family: Roboto;
     font-size: 18px;
+    font-style: normal;
     font-weight: 900;
+    line-height: normal;
 }
 span {
     display: block;
     font-family: Roboto;
     font-size: 15px;
-    font-weight: 600; 
+    font-weight: 400; 
 }
 .euro {
+    color: #353535;
+    font-family: Roboto;
+    font-size: 15.043px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
     position: relative;
     left: 92%;
     right: 10px;

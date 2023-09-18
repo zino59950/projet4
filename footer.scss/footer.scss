@@ -1,6 +1,6 @@
-/* footer */
+/*footer*/
 footer {
-    background: #353535;
+    background:  #353535;
     padding: 20px;
 
     ul {
@@ -33,36 +33,31 @@ footer {
             }
         }
     }
+}
 
-    @media screen and (min-width: 768px) {
-        /* Votre SCSS pour les grands écrans ici */
-        /* h3 plat */
-        h3 {
-            margin-left: 20%;
+@media screen and (min-width: 768px) {
+    /* Votre CSS pour les grands écrans ici */
+    .footer-ohmyfood {
+        display: flex;
+        flex-direction: row-reverse;
+
+        h5 {
+            margin-left: 60px;
+            margin-right: 30px;
+            font-family: Shrikhand;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: white;
         }
 
-        .footer-ohmyfood {
+        ul {
+            padding: 0%;
             display: flex;
-            flex-direction: row-reverse;
-
-            h5 {
-                margin-left: 60px;
-                margin-right: 30px;
-                font-family: Shrikhand;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                color: white;
-            }
-
-            ul {
-                padding: 0%;
-                display: flex;
-                gap: 31px;
-                align-items: center;
-                justify-content: flex-end;
-            }
+            gap: 31px;
+            align-items: center;
+            justify-content: flex-end;
         }
     }
 }

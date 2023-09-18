@@ -1,55 +1,59 @@
-.image-palette img {
-    width: 100%;
-    height: 275px;
-}
+// Remarque : ceci est un code SCSS avec des commentaires pour indiquer les différentes parties du code.
 
-/* dans le main */
-/* coeur */
-.fa-regular.fa-heart {
+// Réinitialisation de la marge du corps
+body {
+    margin: 0;
+  }
+  
+  /* Cœur (icône de like) */
+  .fa-regular.fa-heart {
     bottom: 30px;
     font-size: 22px;
     right: 15px;
-}
-
-.fa-solid.fa-heart {
+  }
+  
+  .fa-solid.fa-heart {
     font-size: 22px;
     color: transparent;
     transition: all 500ms ease-in-out;
     position: absolute;
     right: 0px;
     top: 10px;
-}
-
-.btn-like:hover .fa-solid.fa-heart {
+  }
+  
+  .btn-like:hover .fa-solid.fa-heart {
     background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
     background-clip: text;
     -webkit-background-clip: text;
     transform: scale(1.2);
-}
-
-.btn-like-resto:hover .fa-solid.fa-heart {
+  }
+  
+  .btn-like-resto:hover .fa-solid.fa-heart {
     background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
     background-clip: text;
     -webkit-background-clip: text;
-    transform: scale(1.2);
-}
-
-.btn-like-resto {
+    transform: scale(1);
+  }
+  
+  .btn-like-resto {
     margin-left: 40px;
     position: relative;
-}
-
-.euro {
+  }
+  
+  /* Euro */
+  .euro {
     position: absolute;
     right: 10px;
     bottom: 10px;
-}
-
-main {
+  }
+  
+  /* Main */
+  main {
     background-color: #F6F6F6;
-}
-
-.ensemble-entre {
+  }
+  
+  /* Ensemble Entre */
+  .ensemble-entre {
     display: flex;
     width: 95%;
     height: 70px;
@@ -57,9 +61,10 @@ main {
     flex-wrap: wrap;
     margin-left: 10px;
     padding-left: 10px;
-}
-
-.titre-entre {
+  }
+  
+  /* Titre Entre */
+  .titre-entre {
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
@@ -69,18 +74,30 @@ main {
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
-}
-
-.section-menu {
+    margin-left: 25px;
+    border-bottom: 2px solid #99e2d0;
+    height: 44px;
+    width: 35px;
+  }
+  
+  /* Center Section */
+  .center-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Section Menu */
+  .section-menu {
     background-color: #F6F6F6;
     overflow: hidden;
     border-radius: 30px;
     margin-top: -50px;
     z-index: 20;
     position: relative;
-}
-
-main h1 {
+    width: 100%;
+  }
+  
+  main h1 {
     margin-left: 10px;
     color: var(--Black, #101010);
     font-family: Shrikhand;
@@ -90,10 +107,11 @@ main h1 {
     line-height: normal;
     display: flex;
     justify-content: center;
-}
-
-.titre-plat {
-    margin-left: 20px;
+  }
+  
+  /* Titre Plat */
+  .titre-plat {
+    margin-left: 45px;
     color: #000;
     font-family: Roboto;
     font-size: 16px;
@@ -101,9 +119,13 @@ main h1 {
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
-}
-
-.entre-1 {
+    border-bottom: 2px solid #99e2d0;
+    height: 25px;
+    width: 35px;
+  }
+  
+  /* Entre-1 */
+  .entre-1 {
     display: flex;
     background-color: white;
     width: 80%;
@@ -114,30 +136,41 @@ main h1 {
     height: 65px;
     position: relative;
     padding-top: 10px;
-}
-
-.entre-1 p {
+  }
+  
+  .entre-1 p {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
     font-family: Roboto;
     font-size: 18px;
+    font-style: normal;
     font-weight: 900;
-}
-
-span {
+    line-height: normal;
+  }
+  
+  span {
     display: block;
     font-family: Roboto;
     font-size: 15px;
-    font-weight: 600;
-}
-
-.euro {
+    font-weight: 400;
+  }
+  
+  .euro {
+    color: #353535;
+    font-family: Roboto;
+    font-size: 15.043px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
     position: relative;
     left: 92%;
     right: 10px;
     bottom: 20px;
-}
-
-/* animation verte plat */
-.menuItem {
+  }
+  
+  /* Animation Verte Plat */
+  .menuItem {
     background-color: #fff;
     padding: 1rem;
     display: flex;
@@ -157,136 +190,164 @@ span {
     align-items: center;
     padding-top: 0px;
     padding-bottom: 0px;
-}
-
-.menuItem__confirmation {
-    background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-    height: 85px;
-}
-
-i.fa-solid.fa-check {
-    padding-right: 15px;
-}
-
-.menuItem__header {
-    flex: 1;
-}
-
-.delay-0 {
-    animation-delay: 0s;
-}
-
-.menuItem:hover .menuItem__confirmation {
-    margin-right: 0rem;
-    transform: translateX(1rem); /* Ajoutez une translation pour l'animation */
-    transition-duration: 0.5s;
-}
-
-/* Animation */
-@keyframes itemAppear {
+  
+    .menuItem__confirmation {
+      background-color: #99e2d0;
+      margin: -1rem -5rem -1rem 1rem;
+      width: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-duration: 0.5s;
+      height: 85px;
+  
+      i.fa-solid.fa-check {
+        padding-right: 15px;
+      }
+    }
+  
+    .menuItem__header {
+      flex: 1;
+    }
+  
+    .delay-0 {
+      animation-delay: 0s;
+    }
+  
+    &:hover {
+      .menuItem__confirmation {
+        margin-right: 0rem;
+        transform: translateX(1rem);
+        transition-duration: 0.5s;
+      }
+    }
+  }
+  
+  /* Animation */
+  @keyframes itemAppear {
     0% {
-        transform: scale(0);
+      transform: scale(0);
     }
     100% {
-        transform: scale(1);
+      transform: scale(1);
     }
-}
-
-.sous {
-    margin: 0; /* Supprime la marge inférieure du paragraphe */
-}
-
-/* bouton violet */
-.bouton-center {
+  }
+  
+  .sous {
+    margin: 0;
+  }
+  
+  /* Bouton Violet */
+  .bouton-center {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-}
-
-.bouton-commander {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 218px;
-    height: 50px;
-    border-radius: 25px;
-    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 20px;
-    transition: box-shadow 0.3s ease-in-out; /* Ajout de la transition pour l'ombre */
-}
-
-.bouton-commander:hover {
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5); /* L'ombre devient plus grande au survol */
-}
-
-.commander-bouton {
-    color:  #FFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
+  
+    .bouton-commander {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 218px;
+      height: 50px;
+      border-radius: 25px;
+      background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      margin-top: 20px;
+      transition: box-shadow 0.3s ease-in-out;
+  
+      &:hover {
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+      }
+  
+      .commander-bouton {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+  // ...
 
 @media screen and (min-width: 768px) {
-    /* Votre SCSS pour les grands écrans ici */
-    /* img */
+    /* Votre CSS pour les grands écrans ici */
+  
+    header .arrow {
+      position: relative;
+      right: 50%;
+    }
+  
+    /* Images */
     .image-palette img {
-        width: 100%;
-        height: 350px;
+      width: 100%;
+      height: 350px;
     }
-
-    /* main des plat */
+  
+    /* Styles pour les plats dans le main */
+    .titre-entre {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: uppercase;
+      border-bottom: 2px solid #99e2d0;
+      height: 44px;
+      width: 35px;
+    }
+  
     .entre-1 {
-        display: flex;
-        background-color: white;
-        width: 60%;
-        margin-left: 20%;
-        border-radius: 15px;
-        padding-left: 10px;
-        margin-bottom: 15px;
-        height: 65px;
-        position: relative;
-        padding-top: 10px;
+      display: flex;
+      background-color: white;
+      width: 80%;
+      border-radius: 15px;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      height: 65px;
+      position: relative;
+      padding-top: 10px;
     }
-
+  
     .section-menu {
-        background-color: #F6F6F6;
-        overflow: hidden;
-        border-radius: 30px;
-        margin-top: -50px;
-        z-index: 20;
-        position: relative;
-        margin-left: 200px;
-        margin-right: 200px;
+      background-color: #F6F6F6;
+      overflow: hidden;
+      border-radius: 30px;
+      margin-top: -50px;
+      z-index: 20;
+      position: relative;
+      width: 768px; /* Largeur fixe pour les grands écrans */
     }
-
+  
     main {
-        background-color: white;
+      background-color: white;
     }
-
+  
     .titre-palette {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
-
+  
     .ensemble-entre {
-        display: flex;
-        width: 95%;
-        height: 70px;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-left: 10px;
+      display: flex;
+      width: 95%;
+      height: 70px;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-left: 10px;
     }
-
+  
     .ensemble-entre h3 {
-        margin-left: 20%;
+      margin-left: 0px;
     }
-}
+  
+    /* Styles pour les titres h3 */
+    h3 {
+      margin-left: 0px;
+    }
+  }
+  

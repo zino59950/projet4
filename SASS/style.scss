@@ -1,20 +1,10 @@
+@charset "UTF-8";
+
 body {
-    margin: 0px;
+  margin: 0%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*header*/
-header h1 {
+header {
+  h1 {
     color: #101010;
     text-align: center;
     font-family: Shrikhand, cursive;
@@ -26,788 +16,158 @@ header h1 {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     margin: 0px;
   }
-.arrow {
-    font-size: 30px;
-    position: relative;
-    top: 40px;
-    right: 100px;
-    margin-left: 5px;
-}
-.image-palette img {
-    width: 100%;
-    height: 350px;
-    }
-    /*dans le main*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*coeur*/
-.fa-regular.fa-heart {
-    bottom: 30px;
-    font-size: 22px;
-    right: 15px;
-
 }
 
-
-.fa-solid.fa-heart {
-    font-size: 22px;
-    color: transparent;
-    transition: all 500ms ease-in-out;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-}
-
-.btn-like:hover .fa-solid.fa-heart{
-    
-    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    transform: scale(1.2); 
-
- }
- .btn-like-resto:hover .fa-solid.fa-heart{
-    
-    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    transform: scale(1); 
-
- }
- .btn-like-resto {
-    margin-left: 40px;
-    position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.euro {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
- }
-    
 main {
-    background-color: #F6F6F6;
-}
-.ensemble-entre {
-    display: flex;
-    width: 95%;
-    height: 70px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 10px;
-    padding-left: 10px;
-}
-
-.titre-entre {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-left: 25px;
-    border-bottom: 2px solid #99e2d0;
-    height: 44px;
-    width: 35px;
-}
-.center-section {
-    display: flex;
-    justify-content: center;
-}
-.section-menu {
-    background-color: #F6F6F6;
-    overflow: hidden;
-    border-radius: 30px;
-    margin-top: -50px;
-    z-index: 20;
-    position: relative;
-    width: 100%;
-}
-main h1 {
-    margin-left: 10px;
-    color: var(--Black, #101010);
-    font-family: Shrikhand;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-}
-.titre-plat {
-    margin-left: 45px;
-    color: #000;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-transform: uppercase;
-    border-bottom: 2px solid #99e2d0;
-    height: 25px;
-    width: 35px;
-}
-
-.entre-1 {
-    display: flex;
-    background-color: white;
-    width: 80%;
-    margin-left: 0%;
-    border-radius: 15px;
-    padding-left: 10px;
-    margin-bottom: 15px;
-    height: 65px;
-    position: relative;
-    padding-top: 10px;
-}
-
-.entre-1 p {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 900;
-}
-span {
-    display: block;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 600; 
-}
-.euro {
-    position: relative;
-    left: 92%;
-    right: 10px;
-    bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*animation verte plat*/
-.menuItem {
-    background-color: #fff;
-    padding: 1rem;
-    display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    animation: itemAppear 0.6s;
-    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    animation-fill-mode: both;
-    transform: scale(0);
-    max-width: 80%;
-    margin-left: 6%;
-    margin-right: 10%;
-    display: flex;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.menuItem__confirmation {
-    background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-    height: 85px;
-}
-i.fa-solid.fa-check {
-    padding-right: 15px;
-}
-
-.menuItem__header {
-    flex: 1;
-}
-.delay-0 {
-    animation-delay: 0s;
-}
-.menuItem:hover .menuItem__confirmation {
-    margin-right: 0rem;
-    transform: translateX(1rem); /* Ajoutez une translation pour l'animation */
-    transition-duration: 0.5s;
-}
-
-/* Animation */
-@keyframes itemAppear {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.sous {
-    margin: 0; /* Supprime la marge inférieure du paragraphe */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* bouton violet */
-.bouton-center {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.bouton-commander {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 218px;
-    height: 50px;
-    border-radius: 25px;
-    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 20px;
-    transition: box-shadow 0.3s ease-in-out; /* Ajout de la transition pour l'ombre */
-}
-.bouton-commander:hover {
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5); /* L'ombre devient plus grande au survol */
-}
-.commander-bouton {
-    color:  #FFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*footer*/
-footer {
-    background:  #353535;
-    padding: 20px;
-  }
-  footer ul {
-    padding: 0%;
-  }
-  
-  .footer-ohmyfood {
-    color: white;
-  }
-  .footer-ohmyfood h5 {
-    font-family: Shrikhand;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: white;
-}
-  .footer-ohmyfood li {
-    list-style-type: none;
-  }
-  .footer-ohmyfood li a {
-    color: white;
-    text-decoration: none;
-  }
-  .footer-ohmyfood li i {
-    color: white;
-    padding: 5px;
-  }
-@media screen and (min-width: 768px) {
-    /* Votre CSS pour les grands écrans ici */
-header .arrow {
-position: relative;
-right: 50%;
-}
-/*img*/
-    .image-palette img {
-        width: 100%;
-        height: 350px;
-    }
-    /*main des plat*/
-    .titre-entre {
-        width: 100%;
-        height: 40px;
-        margin-bottom: 10px;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        text-transform: uppercase;
-        border-bottom: 2px solid #99e2d0;
-        height: 44px;
-        width: 35px;
-    }
-    .entre-1 {
-        display: flex;
-        background-color: white;
-        width: 80%;
-        border-radius: 15px;
-        padding-left: 10px;
-        margin-bottom: 15px;
-        height: 65px;
-        position: relative;
-        padding-top: 10px;
-    }
-    .section-menu {
-        background-color: #F6F6F6;
-        overflow: hidden;
-        border-radius: 30px;
-        margin-top: -50px;
-        z-index: 20;
-        position: relative;
-        width: 768px;
-    }
-    
-main {
-    background-color: white;
-}
-
-.titre-palette {
-    display: flex;
-    justify-content: center;
-}
-.ensemble-entre {
-    display: flex;
-    width: 95%;
-    height: 70px;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 10px;
-}
-.ensemble-entre h3 {
-    margin-left: 0px;
-}
-/*h3 plat*/
-h3 {
-    margin-left: 0px;
-}
-.footer-ohmyfood {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .footer-ohmyfood h5 {
-    margin-left: 60px;
-    margin-right: 30px;
-    font-family: Shrikhand;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: white;
-  }
-  .footer-ohmyfood ul {
-    padding: 0%;
-    display: flex;
-    gap: 31px;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  @charset "UTF-8";
-  body {
-    margin: 0%;
-  }
-  
-  .loader-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      animation: fadeIn 0.5s ease-in-out, fadeOut 2.5s ease-in-out 0.5s forwards;
-      pointer-events: none; 
-  }
-  
-  
-    .ball-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .loader-ball {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin: 0 5px;
-        animation: bounce 0.5s alternate infinite;
-    }
-    
-    .loader-ball-1 {
-        background-color: #9356DC;
-        animation-delay: 0.1s;
-    }
-    
-    .loader-ball-2 {
-        background-color: #FF79DA;
-        animation-delay: 0.2s;
-    }
-    
-    .loader-ball-3 {
-        background-color: #99E2D0;
-        animation-delay: 0.3s;
-    }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    @keyframes fadeOut {
-        to {
-            opacity: 0;
-        }
-    }
-    
-    @keyframes bounce {
-        0%, 100% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-20px);
-        }
-    }
-  header h1 {
-    color: #101010;
-    text-align: center;
-    font-family: Shrikhand, cursive;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 15px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    margin: 0px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*main-location*/
-  main {
-    background-color: rgb(246, 246, 246);
-    padding-bottom: 60px;
-  }
-  
-  main .location {
-    background-color:#EAEAEA;
+  background-color: rgb(246, 246, 246);
+  padding-bottom: 60px;
+
+  .location {
+    background-color: #EAEAEA;
     padding: 0.5rem;
     align-items: center;
     margin-top: 3px;
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 17px;
+      i {
+        width: 12px;
+        height: 16px;
+      }
+    }
   }
-  main .location h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
-  }
-  main .location i {
-    width: 12px;
-    height: 16px;
-  }
-  
-  /*main-reservation*/
+
   .reservation {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    .content-explorer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .reservez {
+      color: #000;
+      text-align: center;
+      font-family: Roboto, cursive;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .decouvrez {
+      color: #353535;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    .bouton-explorer {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 218px;
+      height: 50px;
+      border-radius: 25px;
+      background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      margin-top: 20px;
+      transition: box-shadow 0.3s ease-in-out;
+
+      .explorer-bouton {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      &:hover {
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
   }
-  
-  main .reservation .content-explorer {
-    display: flex;
-    justify-content: center;
-  }
-  main .reservation .reservez {
-    color: #000;
-    text-align: center;
-    font-family: Roboto, cursive;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  main .reservation .decouvrez {
-    color: #353535;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  main .reservation .bouton-explorer {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 218px;
-    height: 50px;
-    border-radius: 25px;
-    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 20px;
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  
-  main .reservation .bouton-explorer .explorer-bouton {
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  
-  main .reservation .bouton-explorer:hover {
-    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.25);
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*fonctionnement*/
+
   .fonctionnement {
     padding-bottom: 30px;
+
+    .fonctionnement-titre {
+      font-size: 24px;
+      font-weight: 700;
+      padding-left: 20px;
+      padding-top: 30px;
+      margin-left: 5%;
+    }
+
+    .num-1,
+    .num-2,
+    .num-3 {
+      width: 93%;
+      height: 70px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      background: var(--background, #F6F6F6);
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      padding-right: 20px;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #9356DC;
+        color: #ffffff;
+        border-radius: 15px;
+        width: 24px;
+        height: 25px;
+        position: relative;
+        right: 30px;
+      }
+
+      .fa-solid.fa-mobile-screen-button,
+      .fa-solid.fa-list-ul,
+      .fa-solid.fa-store {
+        color: #7E7E7E;
+        padding: 15px;
+        margin-left: -25px;
+      }
+    }
   }
-  
-  .fonctionnement-titre {
-    font-size: 24px;
-    font-weight: 700;
-    padding-left: 20px;
-    padding-top: 30px;
-    margin-left: 5%;
-  }
-  
-  .num-1,
-  .num-2,
-  .num-3 {
-    width: 93%;
-    height: 70px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: var(--background, #F6F6F6);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 20px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    padding-right: 20px;
-  }
-  
-  .num-1 span,
-  .num-2 span,
-  .num-3 span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #9356DC;
-    color: #ffffff;
-    border-radius: 15px;
-    width: 24px;
-    height: 25px;
-    position: relative;
-    right: 30px;
-  }
-  
-  .fa-solid.fa-mobile-screen-button,
-  .fa-solid.fa-list-ul,
-  .fa-solid.fa-store {
-    color: #7E7E7E;
-    padding: 15px;
-    margin-left: -25px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*restaurant*/
-  .restaurant-section {
-    background: var(--background, #F6F6F6);
-    text-decoration: none;
-  }
-  
+}
+
+.restaurant-section {
+  background: var(--background, #F6F6F6);
+  text-decoration: none;
+
   a {
-    text-decoration: none; /* Supprime la soulignement */
-    outline: none; /* Supprime la bordure de focus */
-    color: inherit; /* Utilise la couleur du texte environnant */
+    text-decoration: none;
+    outline: none;
+    color: inherit;
   }
-  
+
   .restaurant-title {
     font-size: 24px;
     padding-left: 20px;
     padding-top: 40px;
     padding-bottom: 10px;
     margin-left: 5%;
-    }
   }
-  
+
   .restaurant-carte {
     display: flex;
     flex-wrap: wrap;
@@ -816,134 +176,7 @@ h3 {
     padding-bottom: 75px;
     margin-left: 30px;
     margin-right: 30px;
-  }
-  
-  .carte-menu {
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative; /* Ajout de position relative au conteneur */
-    width: 100%;
-  }
-  .carte-menu .content-carte {
-    background-color: white;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 15px 15px;
-    position: relative;
-  }
-  .carte-menu .content-carte .btn-like {
-    width: 30%;
-  }
-  .carte-menu img {
-    width: 100%;
-    height: 231px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
-  
-  .carte-menu .carte-badge {
-    position: absolute; /* Utilisation de position absolute pour le badge */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 29px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    background: var(--green, #99E2D0);
-    color: var(--green-font, #008766);
-    font-size: 14px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    right: 0.5rem; /* À 0,5rem du bord gauche */
-    top: 0.5rem; /* À 0,5rem du bord supérieur */
-  }
-  .carte-menu .carte-content h3 {
-    margin-bottom: -13px;
-    margin-top: 12px;
-  }
-  .carte-menu .carte-content p {
-    font-size: 17px;
-    font-weight: 300;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    .carte-content {
-      margin-left:10px;
-    }
-    /*coeur*/
-    .fa-regular.fa-heart {
-      font-size: 22px;
-        display:flex;
-        justify-content:start-end;
-      top:22px;
-      right:5px;
-      position:relative;
-    }
-    
-    .fa-solid.fa-heart {
-      font-size: 22px;
-      color: transparent;
-      transition: opacity 800ms ease-in-out;
-      position: relative;
-      right:5px;
-    }
-  
-    .bouton-like:hover .fa-solid.fa-heart {
-      background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
-      background-clip: text;
-      -webkit-background-clip: text;
-      opacity: 1;
-    }
-    
-    /*restaurant*/
-    .restaurant-section {
-      background: var(--background, #F6F6F6);
-      text-decoration: none;
-    }
-    
-    a {
-      text-decoration: none; 
-      outline: none; 
-      color: inherit; 
-    }
-    
-    .restaurant-title {
-      font-size: 24px;
-      padding-left: 20px;
-      padding-top: 40px;
-      padding-bottom: 10px;
-      margin-left: 5%;
-    }
-    
-    .restaurant-carte {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      justify-content: center;
-      padding-bottom: 75px;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-    
+
     .carte-menu {
       display: flex;
       flex-direction: column;
@@ -951,151 +184,109 @@ h3 {
       overflow: hidden;
       position: relative; /*position relative au conteneur*/
       width: 100%;
+
+      .content-carte {
+        background-color: white;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 15px 15px;
+        position: relative;
+
+        .btn-like {
+          width: 30%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 231px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .carte-badge {
+        position: absolute; /*position absolute pour le badge*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 29px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background: var(--green, #99E2D0);
+        color: var(--green-font, #008766);
+        font-size: 14px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        right: 0.5rem; /* À 0,5rem du bord gauche */
+        top: 0.5rem; /* À 0,5rem du bord supérieur */
+      }
+
+      .carte-content h3 {
+        margin-bottom: -13px;
+        margin-top: 12px;
+      }
+
+      .carte-content p {
+        font-size: 17px;
+        font-weight: 300;
+      }
     }
-    .carte-menu .content-carte {
-      background-color: white;
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-      border-radius: 0 0 15px 15px;
-      position: relative;
-    }
-    .carte-menu .content-carte .btn-like {
-      width: 30%;
-    }
-    .carte-menu img {
-      width: 100%;
-      height: 231px;
-      object-fit: cover;
-      border-radius: 15px 15px 0 0;
-    }
-    .carte-menu .carte-badge {
-      position: absolute; /*position absolute pour le badge*/
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80px;
-      height: 29px;
-      flex-shrink: 0;
-      border-radius: 2px;
-      background: var(--green, #99E2D0);
-      color: var(--green-font, #008766);
-      font-size: 14px;
-      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-      right: 0.5rem; /* À 0,5rem du bord gauche */
-      top: 0.5rem; /* À 0,5rem du bord supérieur */
-    }
-    .carte-menu .carte-content h3 {
-      margin-bottom: -13px;
-      margin-top: 12px;
-    }
-    .carte-menu .carte-content p {
-      font-size: 17px;
-      font-weight: 300;
-    }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  footer {
-      background:  #353535;
-      padding: 20px;
-    }
-    footer ul {
-      padding: 0%;
-    }
-    
-    .footer-ohmyfood {
-      color: white;
-      h5 {
-        font-family: Shrikhand;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        color: white;
-    }
-    .footer-ohmyfood h5 {
+  }
+}
+
+footer {
+  background: #353535;
+  padding: 20px;
+
+  ul {
+    padding: 0%;
+  }
+
+  .footer-ohmyfood {
+    color: white;
+
+    h5 {
       font-family: Shrikhand;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       color: white;
-  }
-    .footer-ohmyfood li {
+    }
+
+    li {
       list-style-type: none;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      i {
+        color: white;
+        padding: 5px;
+      }
     }
-    .footer-ohmyfood li a {
-      color: white;
-      text-decoration: none;
-    }
-    .footer-ohmyfood li i {
-      color: white;
-      padding: 5px;
-    }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  @media screen and (min-width: 768px) {
-      /* Votre CSS pour les grands écrans ici */
-  
-  
-  .footer-ohmyfood {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-    .footer-ohmyfood h5 {
-      margin-left: 45px;
-      margin-right: 30px;
-      font-family: Shrikhand;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      color: white;
-    }
-    .footer-ohmyfood ul {
-      padding: 0%;
-      display: flex;
-      gap: 31px;
-      align-items: center;
-      justify-content: flex-end;
-    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Votre CSS pour les grands écrans ici */
+
     .fonctionnement-liste {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       width: 100%;
       padding-left: 0px;
-  }
+    }
+
     .carte-menu {
       width: 45%;
     }
+
     .num-1,
     .num-2,
     .num-3 {
@@ -1104,20 +295,6 @@ h3 {
       box-sizing: border-box;
       padding-right: 20px;
     }
-    
   }
+/*PARTIE ACCUEIL*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
