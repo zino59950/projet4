@@ -236,6 +236,13 @@ main {
   }
 }
 
+.menu-item {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  display: flex;
+}
+
 footer {
   background: #353535;
   padding: 20px;

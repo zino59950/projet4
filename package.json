@@ -6,7 +6,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch SASS/style.scss dossier-css/style.css" 
+    "sass": "sass --watch SASS/style.scss style.css" 
   },
   "author": "",
   "license": "ISC"
