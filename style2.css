@@ -559,7 +559,7 @@ footer {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     /* Votre CSS pour les grands écrans ici */
 
 
@@ -597,7 +597,7 @@ footer {
   .num-1,
   .num-2,
   .num-3 {
-    width: 100%;
+    width: 320px;
     height: 72.379px;
     box-sizing: border-box;
     padding-right: 20px;

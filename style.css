@@ -55,7 +55,7 @@ header h1 {
 
 
 
-    /*coeur*/
+/*.............................................................*/
 .fa-regular.fa-heart {
     bottom: 30px;
     font-size: 22px;
@@ -90,10 +90,10 @@ header h1 {
 
  }
  .btn-like-resto {
-    margin-left: 40px;
+    margin-left: 4%;
     position: relative;
 }
-
+/*.............................................................*/
 .menu-item {
     background-color: white;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -102,19 +102,41 @@ header h1 {
     justify-content: space-between;
     overflow: hidden;
     box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 
 .content-price-check {
     display: flex;
 }
 .menu-item .content-text {
-    padding-right: 16px;
+    overflow: hidden;
 }
 
-.menu-item h3, .menu-item p{
+.menu-item h3 {
     overflow: hidden;
+    color: #000;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-left: 15px;
+}
+.menu-item p {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Roboto;
+    font-size: 15.043px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 15px;
 }
 .content-price-check:hover .check {
     margin-right: 0px;
@@ -122,7 +144,7 @@ header h1 {
 .price {
     display: flex;
     align-items: flex-end;
-    margin-right: 16px;
+    margin-right: 30px;
     padding-bottom: 16px;
 }
 
@@ -136,6 +158,7 @@ header h1 {
     margin-right: -71px;
     transition: all 0.3s ease-in-out;
 }
+/*.............................................................*/
 
 
 
@@ -154,11 +177,6 @@ header h1 {
 
 
 
-.euro {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
- }
     
 main {
     background-color: #F6F6F6;
@@ -169,7 +187,6 @@ main {
     height: 70px;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 10px;
     padding-left: 10px;
 }
 
@@ -183,7 +200,7 @@ main {
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
-    margin-left: 25px;
+    margin-left: 15px;
     border-bottom: 2px solid #99e2d0;
     height: 44px;
     width: 35px;
@@ -213,7 +230,7 @@ main h1 {
     justify-content: center;
 }
 .titre-plat {
-    margin-left: 45px;
+    margin-left: 20px;
     color: #000;
     font-family: Roboto;
     font-size: 16px;
@@ -267,87 +284,6 @@ span {
     right: 10px;
     bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*animation verte plat*/
-.menuItem {
-    background-color: #fff;
-    padding: 1rem;
-    display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    animation: itemAppear 0.6s;
-    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    animation-fill-mode: both;
-    transform: scale(0);
-    max-width: 80%;
-    margin-left: 6%;
-    margin-right: 10%;
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 0px;
-}
-.menuItem__confirmation {
-    background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-    height: 85px;
-}
-i.fa-solid.fa-check {
-    padding-right: 15px;
-}
-
-.menuItem__header {
-    flex: 1;
-}
-.delay-0 {
-    animation-delay: 0s;
-}
-.menuItem:hover .menuItem__confirmation {
-    margin-right: 0rem;
-    transform: translateX(1rem); /* Ajoutez une translation pour l'animation */
-    transition-duration: 0.5s;
-}
-
-/* Animation */
-@keyframes itemAppear {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.sous {
-    margin: 0; /* Supprime la marge inférieure du paragraphe */
-}
-
-
-
-
-
 
 
 
