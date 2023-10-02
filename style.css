@@ -56,6 +56,11 @@ header h1 {
 
 
 /*.............................................................*/
+
+
+
+
+
 .fa-regular.fa-heart {
   bottom: 30px;
   font-size: 22px;
@@ -70,7 +75,7 @@ header h1 {
   transition: all 500ms ease-in-out;
   position: absolute;
   right: 0px;
-  top: 10px;
+  top: 0px;
 }
 
 .btn-like:hover .fa-solid.fa-heart{
@@ -193,7 +198,11 @@ header h1 {
 
 
 
-
+.titre-palette {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
 
 
 
