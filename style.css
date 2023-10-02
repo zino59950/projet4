@@ -105,6 +105,28 @@ header h1 {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 30px;
+  opacity: 0; /* Opacité initiale à 0 pour masquer les éléments au début */
+  transform: translateY(20px); /* Transformation initiale pour déplacer les éléments vers le bas */
+  animation: fadeInUp 1s ease-in-out 0s 1 normal forwards; /* Animation d'entrée */
+}
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .content-price-check {
