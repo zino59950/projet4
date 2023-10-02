@@ -2,14 +2,14 @@
 footer {
     background:  #353535;
     padding: 20px;
-
+  
     ul {
         padding: 0%;
     }
-
+  
     .footer-ohmyfood {
         color: white;
-
+  
         h5 {
             font-family: Shrikhand;
             font-size: 18px;
@@ -18,22 +18,22 @@ footer {
             line-height: normal;
             color: white;
         }
-
+  
         li {
             list-style-type: none;
-
+  
             a {
                 color: white;
                 text-decoration: none;
             }
-
+  
             i {
                 color: white;
                 padding: 5px;
             }
         }
     }
-}
+  }
 
 @media screen and (min-width: 768px) {
     /* Votre CSS pour les grands écrans ici */

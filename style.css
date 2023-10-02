@@ -1,17 +1,506 @@
-/* Error: expected selector.
- *   ,
- * 1 | /--------------------------------------------------------------------------------------------------------------
- *   | ^
- *   '
- *   SASS\style.scss 1:1  root stylesheet */
+body {
+  margin: 0px;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+header h1 {
+  color: #101010;
+  text-align: center;
+  font-family: Shrikhand, cursive;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 15px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  margin: 0px;
+}
+.arrow {
+  font-size: 30px;
+  position: relative;
+  top: 40px;
+  right: 100px;
+  margin-left: 5px;
+}
+.image-palette img {
+  width: 100%;
+  height: 350px;
+  }
+  /*dans le main*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.............................................................*/
+.fa-regular.fa-heart {
+  bottom: 30px;
+  font-size: 22px;
+  right: 15px;
+
+}
+
+
+.fa-solid.fa-heart {
+  font-size: 22px;
+  color: transparent;
+  transition: all 500ms ease-in-out;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+.btn-like:hover .fa-solid.fa-heart{
+  
+  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: scale(1.2); 
+
+}
+.btn-like-resto:hover .fa-solid.fa-heart{
+  
+  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: scale(1); 
+
+}
+.btn-like-resto {
+  margin-left: 20px;
+  position: relative;
+}
+/*.............................................................*/
+.menu-item {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.content-price-check {
+  display: flex;
+}
+.menu-item .content-text {
+  overflow: hidden;
+}
+
+.menu-item h3 {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+.menu-item p {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.content-price-check:hover .check {
+  margin-right: 0px;
+}
+.price {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 30px;
+  padding-bottom: 16px;
+}
+
+.check {
+  background-color: #99e2d0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-right: -71px;
+  transition: all 0.3s ease-in-out;
+}
+/*.............................................................*/
+.titre-entre h3 {
+  font-weight: 400;
+}
+.titre-plat h3 {
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+main {
+  background-color: #F6F6F6;
+}
+.ensemble-entre {
+  display: flex;
+  width: 95%;
+  height: 70px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.titre-entre {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 15px;
+  border-bottom: 2px solid #99e2d0;
+  height: 44px;
+  width: 35px;
+}
+.center-section {
+  display: flex;
+  justify-content: center;
+}
+.section-menu {
+  background-color: #F6F6F6;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-top: -50px;
+  z-index: 20;
+  position: relative;
+  width: 100%;
+}
+main h1 {
+  margin-left: 10px;
+  color: var(--Black, #101010);
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+.titre-plat {
+  margin-left: 20px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  border-bottom: 2px solid #99e2d0;
+  height: 25px;
+  width: 35px;
+}
+
+.entre-1 {
+  display: flex;
+  background-color: white;
+  width: 80%;
+  margin-left: 0%;
+  border-radius: 15px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  height: 65px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.entre-1 p {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+span {
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a   \2577 \a 1 \2502  /--------------------------------------------------------------------------------------------------------------\d\a   \2502  ^\a   \2575 \a   SASS\\style.scss 1:1  root stylesheet";
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400; 
+}
+.euro {
+  color: #353535;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  position: relative;
+  left: 92%;
+  right: 10px;
+  bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* bouton violet */
+.bouton-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.bouton-commander {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease-in-out; /* Ajout de la transition pour l'ombre */
+}
+.bouton-commander:hover {
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5); /* L'ombre devient plus grande au survol */
+}
+.commander-bouton {
+  color:  #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer {
+  background:  #353535;
+  padding: 20px;
+}
+footer ul {
+  padding: 0%;
+}
+
+.footer-ohmyfood {
+  color: white;
+}
+.footer-ohmyfood h5 {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+}
+.footer-ohmyfood li {
+  list-style-type: none;
+}
+.footer-ohmyfood li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-ohmyfood li i {
+  color: white;
+  padding: 5px;
+}
+@media screen and (min-width: 768px) {
+  /* Votre CSS pour les grands écrans ici */
+header .arrow {
+position: relative;
+right: 50%;
+}
+/*img*/
+  .image-palette img {
+      width: 100%;
+      height: 350px;
+  }
+  /*main des plat*/
+  .titre-entre {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: uppercase;
+      border-bottom: 2px solid #99e2d0;
+      height: 44px;
+      width: 35px;
+  }
+  .entre-1 {
+      display: flex;
+      background-color: white;
+      width: 80%;
+      border-radius: 15px;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      height: 65px;
+      position: relative;
+      padding-top: 10px;
+  }
+  .section-menu {
+      background-color: #F6F6F6;
+      overflow: hidden;
+      border-radius: 30px;
+      margin-top: -50px;
+      z-index: 20;
+      position: relative;
+      width: 768px;
+  }
+  
+main {
+  background-color: white;
+}
+
+.titre-palette {
+  display: flex;
+  justify-content: center;
+}
+.ensemble-entre {
+  display: flex;
+  width: 95%;
+  height: 70px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+.ensemble-entre h3 {
+  margin-left: 0px;
+}
+/*h3 plat*/
+h3 {
+  margin-left: 0px;
+}
+.footer-ohmyfood {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.footer-ohmyfood h5 {
+  margin-left: 60px;
+  margin-right: 30px;
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+}
+.footer-ohmyfood ul {
+  padding: 0%;
+  display: flex;
+  gap: 31px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
