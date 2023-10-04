@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .loader-container {
@@ -145,7 +146,6 @@ main .reservation .content-explorer {
 main .reservation .reservez {
   color: #000;
   text-align: center;
-  font-family: Roboto, cursive;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -154,7 +154,6 @@ main .reservation .reservez {
 main .reservation .decouvrez {
   color: #353535;
   text-align: center;
-  font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -398,7 +397,7 @@ a {
   .fa-regular.fa-heart {
     font-size: 22px;
       display:flex;
-      justify-content:start-end;
+      justify-content:end;
     top:22px;
     right:5px;
     position:relative;
