@@ -168,7 +168,7 @@ header h1 {
   margin-left: 15px;
   margin-top: 5px;
 }
-.content-price-check:hover .check {
+.menu-item:hover .check {
   margin-right: 0px;
 }
 .price {
